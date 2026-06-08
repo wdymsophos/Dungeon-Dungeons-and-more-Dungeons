@@ -14,28 +14,7 @@ Matheus Tupiassu de Pinho Lourenço.
 
 
 ---
-Symbols
-========================================
-"<" Player looking left
-"^" Player looking up
-">" Player looking right
-"v" Player looking down
-
-" * " Wall: the player cannot pass through
-"#" Spike: the player dies when stepping on it
-"k" Box: the player cannot pass through, but it can be destroyed with an attack
-"O" Button: executes an action when pressed
-"D" Closed door: the player cannot pass through
-"@" Key: opens a closed door upon interaction
-"=" Open door: the player can pass through
-"L" Stairs: takes the player to the next level
-
-"X" Monster Type 1 (BAT)
-"Y" Monster Type 2 (FOLLOWERS OF THE VAMPIRE)
-"Z" Final Boss (ALUCARD)
-3.2 Player Commands
-"w" Moves the player up and changes the symbol to ^
-
+![commands](https://github.com/wdymsophos/Dungeon-Dungeons-and-more-Dungeons/blob/main/Captura%20de%20Tela%202026-06-08%20a%CC%80s%2020.33.31.png)
 ---
 ### IA's
 

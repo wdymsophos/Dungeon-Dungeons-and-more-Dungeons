@@ -14,7 +14,7 @@ Matheus Tupiassu de Pinho Lourenço.
 
 
 ---
-![commands](https://github.com/wdymsophos/Dungeon-Dungeons-and-more-Dungeons/blob/main/Captura%20de%20Tela%202026-06-08%20a%CC%80s%2020.33.31.png)
+![commands](https://github.com/wdymsophos/Dungeon-Dungeons-and-more-Dungeons/blob/main/symbols.png)
 ---
 
 ### IA's

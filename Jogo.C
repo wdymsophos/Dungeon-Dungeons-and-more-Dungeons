@@ -106,7 +106,7 @@ int main()
 		if(menu == 1)
 		{
 			system("cls");
-			printl("Cerca de 1800, em uma vila esquecida da Romenia...", 20);
+			printl("Cerca de 1800, em uma vila esquecida da Romenia --pequena, sombria e fria-- tem ocorrido eventos dos quais tem assombrado os moradores.", 20);
 			printl("Qual o nome do seu heroi: ", 20);
 			scanf(" %s", player); 
 
@@ -190,14 +190,14 @@ int main()
 						printf("--- MESTRE CAÇADOR ---\n");
 						printf("NPC: Ola, %s! O perigo espreita. Escolha a sua arma:\n\n", player);
 						printf("1 - Espada de Prata (Area 3x2 a frente)\n");
-						printf("2 - Arco de Agua Benta (Area 4x1 a frente)\n");
+						printf("2 - Arco de Abençoado (Area 4x1 a frente)\n");
 						printf("3 - Estaca de Madeira / Cajado (Adjacentes)\n");
 						printf("\nEscolha (1-3): ");
 						scanf(" %d", &escolha);
 						
 						// armas
 						if(escolha == 1) { arma = 1; nome_arma = "Espada de Prata"; }
-						else if(escolha == 2) { arma = 2; nome_arma = "Arco de Agua Benta"; }
+						else if(escolha == 2) { arma = 2; nome_arma = "Arco de Abençoado"; }
 						else if(escolha == 3) { arma = 3; nome_arma = "Cajado de Madeira"; }
 						Sleep(1000);
 					}

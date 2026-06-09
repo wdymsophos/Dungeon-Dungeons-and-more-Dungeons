@@ -1,0 +1,128 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h> 
+#include <conio.h>   
+
+// Função de imprimir lento e IA
+void printl(const char *texto, int atraso_ms)
+{
+    for (int i = 0; texto[i] != '\0'; i++)
+    {
+        printf("%c", texto[i]); // ? printf ao invés de printl
+        fflush(stdout); // Força impressão imediata
+        Sleep(atraso_ms); // Pausa em milissegundos
+    }
+    printf("\n"); // Nova linha ao final
+}
+
+int main(){
+    char mov;
+    int i;
+    int l;
+    int c;
+    char dir = '^'; // Mudado de 'j' para 'dir' para corrigir o conflito
+    int cunt1;
+    int menu = 0;
+    char player;
+    int j; // Declarando o 'j' para usar como contador no for
+
+    int vila[10][10] =
+    {
+        //0,1,2, 3, 4, 5, 6, 7, 8, 9
+        1, 0, 0, 0, 0, 0, 0, 0, 0, 0,//0
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//1
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//2
+        0, 0, 0, 0, 0, 0, 0, 2, 0, 0,//3
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//4
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//5
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//6
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//7
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,//8
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0 //9
+    };
+    int jogador;
+
+    while(menu == 0)
+    {
+        system("cls");
+        printl("Dungeons & Dungeons and more Dungeons\n", 100);
+
+        printl("1-Jogar\n", 50);
+        printl("2-Tutorial\n", 50);
+        printl("3-Sair\n", 50);
+
+        scanf(" %d", &menu);
+
+        if(menu != 1 && menu != 2 && menu != 3)
+        {
+            menu = 0;
+            printl("OPÇÃO INVALIDA\n", 25);
+        }
+        
+        //jogar
+        if(menu == 1)
+        {
+            menu = 0;
+            system("cls");
+
+            //hj 21/05 to fazendo a historinha e implementando
+            printl("Cerca de 1800,em uma vila esquecida da Romenia pequena, sombria e fria, tem ocorrido eventos dos quais tem assombrado os moradores.", 100);
+            printl("Você acorda, depois de uma boa cochilada ao lado da sua árvore predileta, e depois de tanta reflexão sobre os eventos, vc se decide que vai dar um ponto final nisso, investigando e aceessando tudo que você tem a disposição", 50);
+
+            system("cls");
+            printl("Qual o nome do seu heroi: ", 50);
+            //coloquei mais uma frase de efeito
+            printl("Lembre-se de nao acordar os morcegos da vila, eles mordem e atacam", 50);
+            scanf(" %c", &player);
+
+            for(i = 0; i < 10; i++)
+            {
+                for(j = 0; j < 10; j++)
+                {
+                    // printf("%2d", vila[i][j]);
+                    if(vila[i][j] == 0){
+                        printf("O");
+                    }
+                    else if(vila[i][j] == 1){ // Corrigido de = para ==
+                        while(menu == 0){
+                            mov = getch();
+
+                            //movimento para a esquerda
+                            if(mov == 'a'){
+                                printf("<");
+                            }
+                            //movimento para baixo
+                            else if(mov == 's'){
+                                printf("v");
+                            }
+                            //movimento para cima
+                            else if(mov == 'w'){
+                                printf("^");
+                            }
+                            //movimento para a direita
+                            else if(mov == 'd'){
+                                printf(">"); // Adicionado ponto e vírgula
+                            }
+                        }
+                    }
+                }
+                printf("\n");
+            }
+            //quero que o monstro tipo 1 seja morcegos, o tipo 2 aqueles servos do dracula e o boss final o proprio
+        }
+        
+        if(menu == 2)
+        {
+            menu = 0;
+            system("cls");
+
+            printf("< Jogador olhando para a esquerda\n^ Jogador olhando para cima\n> Jogador olhando para a direita\nv Jogador olhando para baixo\n* Parede: o jogador não pode passar\n# Espinho: o jogador morre ao passar por cima\nk Caixa: o jogador não pode passar, mas pode ser destruída com ataque\nO Botão: executa uma ação ao ser pressionado\nD Porta fechada: o jogador não pode passar\n@ Chave: abre uma porta fechada ao interagir\n= Porta aberta: o jogador pode passar\nL Escada: leva o jogador para a próxima fase\nX Monstro Tipo 1\nY Monstro Tipo 2\nZ Boss Final\n");
+            system("pause");
+            fflush(stdin);
+        }
+    }
+
+    return 0;
+}
+
+```

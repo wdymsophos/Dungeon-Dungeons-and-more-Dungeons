@@ -20,6 +20,8 @@ void printl(const char *texto, int atraso_ms)
 
 int main()
 {
+	//setup de linguagem de terminal para o português
+	setlocale(LC_ALL, "Portuguese");
 	// Variáveis de laço, movimentação e menus
 	int i, j;
 	char mov = 'w'; 

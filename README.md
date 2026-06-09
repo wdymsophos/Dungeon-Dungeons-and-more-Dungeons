@@ -1,12 +1,16 @@
 # Dungeon-Dungeons-and-more-Dungeons
 ASCII art game made in C
 
+
+
 ---
 
 ###  𓆝 𓆟 Made by 𓆝 𓆟 
 Sophia Figueira Lanzuolo de Paula;
 Raimundo Bilorio Carreteiro Neto;
 Matheus Tupiassu de Pinho Lourenço.
+
+
 
 
 ---
@@ -21,6 +25,9 @@ A silver sword.
 A silver bow and arrows, blessed and washed in holy water.
 
 A wooden stake, which also serves as a sharp staff.
+
+
+
 
 ---
 ![commands](https://github.com/wdymsophos/Dungeon-Dungeons-and-more-Dungeons/blob/main/symbols.png)

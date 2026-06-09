@@ -16,7 +16,7 @@ Matheus Tupiassu de Pinho Lourenço.
 ---
 ## Story
 
-A dark retelling of the classic Dracula with a few hidden Easter eggs, welcome to Dungeons & Dungeons and more Dungeons. Inspired by the chaotic dynamics of Dwarf Fortress and developed as an assignment for Professor Pedro Girotto, this dungeon crawler pits you against carnivorous bats, guided servants, and fanatic worshippers of Alucard.
+A dark retelling of the classic Dracula with a few hidden Easter eggs, welcome to Dungeons & Dungeons and more Dungeons. Developed as an assignment for Professor Pedro Girotto, this dungeon crawler pits you against carnivorous bats, guided servants, and fanatic worshippers of Alucard.
 
 To survive, your arsenal consists of exactly 3 anti-vampire weapons forged against evil:
 

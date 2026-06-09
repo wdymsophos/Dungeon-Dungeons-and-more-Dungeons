@@ -3,7 +3,7 @@
 #include <windows.h> // Para funções do sistema como Sleep() e system("cls")
 #include <conio.h>   // Para não precisar dar enter em todo comando
 #include <time.h>    // Para gerar números aleatórios 
-
+#include <locale.h>  // Para poder usar caracteres especiais
 // Função de imprimir lento
 void printl(const char *texto, int atraso_ms)
 {
